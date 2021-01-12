@@ -1016,7 +1016,7 @@ class World {
   double averageLinearVel = -1.0;
   final Vector2 liquidOffset = Vector2.zero();
   final Vector2 circCenterMoved = Vector2.zero();
-  final Color3i liquidColor = Color3i.fromRGBd(.4, .4, 1.0);
+  final Color3i liquidColor = Color3i.fromRGBd(0.4, .4, 1.0);
 
   final Vector2 center = Vector2.zero();
   final Vector2 axis = Vector2.zero();
@@ -1053,7 +1053,7 @@ class World {
           if (wireframe) {
             debugDraw.drawCircleAxis(center, radius, axis, color);
           } else {
-            debugDraw.drawSolidCircle(center, radius, axis, color);
+            debugDraw.drawSolidCircle(center, radius, color);
           }
         }
         break;
